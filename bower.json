@@ -1,0 +1,24 @@
+{
+  "name": "slim-template",
+  "description": "A very slim &amp; simple php template.",
+  "main": "dist/slim-template.js",
+  "authors": [
+    "afei"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "next"
+  ],
+  "homepage": "https://github.com/afeiship/slim-template",
+  "moduleType": [
+    "amd"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src"
+  ]
+}
