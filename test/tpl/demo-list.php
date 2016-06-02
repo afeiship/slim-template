@@ -5,9 +5,9 @@
   <?php foreach ($blog_entries as $item): ?>
 
     <li>
-      <h3><? echo $item['title'] ?></h3>
+      <h3><?php echo $item['title'] ?></h3>
 
-      <p><? echo $item['body'] ?></p>
+      <p><?php echo $item['body'] ?></p>
     </li>
 
   <?php endforeach; ?>
