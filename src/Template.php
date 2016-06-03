@@ -6,10 +6,10 @@
  * Time: 15:25
  */
 
-namespace fei;
+namespace nx\module;
 
 
-class TemplateCore
+class Template
 {
   private $data = array();
 

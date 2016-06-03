@@ -1,21 +1,22 @@
 <?php
 
-include "../src/TemplateCore.php";
-include "../src/XSmarty.php";
+include "../src/Template.php";
+include "../src/SlimTemplate.php";
 
-$list_data = array(
+$list_data = [
   'blog_title' => 'My Blog Title',
   'blog_heading' => 'My Blog Heading',
-  'blog_entries' => array(
-    array('title' => 'Title 1', 'body' => 'Body 1'),
-    array('title' => 'Title 2', 'body' => 'Body 2'),
-    array('title' => 'Title 3', 'body' => 'Body 3'),
-    array('title' => 'Title 4', 'body' => 'Body 4'),
-    array('title' => 'Title 5', 'body' => 'Body 5')
-  )
-);
+  'blog_entries' => [
+    ['title' => 'Title 1', 'body' => 'Body 1'],
+
+    ['title' => 'Title 2', 'body' => 'Body 2'],
+    ['title' => 'Title 3', 'body' => 'Body 3'],
+    ['title' => 'Title 4', 'body' => 'Body 4'],
+    ['title' => 'Title 5', 'body' => 'Body 5']
+  ]
+];
 
 print_r($list_data);
-$page1 = \fei\XSmarty::display('./tpl/demo-list.php', $list_data);
+$page1 = \nx\module\SlimTemplate::display('./tpl/demo-list.php', $list_data);
 
 echo $page1;

@@ -6,14 +6,14 @@
  * Time: 15:25
  */
 
-namespace fei;
+namespace nx\module;
 
 
-class XSmarty
+class SlimTemplate extends Template
 {
   public static function display($inTemplate, $inData)
   {
-    $view = new TemplateCore();
+    $view = new Template();
     foreach ($inData as $key => $value) {
       $view->$key = $value;
     }
