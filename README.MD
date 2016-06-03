@@ -3,6 +3,7 @@ A very slim &amp; simple php template.
 
 
 ##usage:
++ set data:
 ```php
 <?php
 include "../src/Template.php";
@@ -25,5 +26,29 @@ print_r($list_data);
 $page1 = \nx\module\SlimTemplate::display('./tpl/demo-list.php', $list_data);
 
 echo $page1;
+
+```
+
+
++ template page:
+```php
+
+ <?php
+ //Template page:
+
+ <h1><?php echo $blog_title ?></h1>
+ <h2><?php echo $blog_heading ?></h2>
+
+ <ul>
+   <?php foreach ($blog_entries as $item): ?>
+
+     <li>
+       <h3><?php echo $item['title'] ?></h3>
+
+       <p><?php echo $item['body'] ?></p>
+     </li>
+
+   <?php endforeach; ?>
+ </ul>
 
 ```
